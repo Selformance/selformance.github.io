@@ -7,6 +7,7 @@ Performance, présence, alignement — *apporter à chacun de la performance par
 - `index.html` — Accueil
 - `a-propos.html` — À propos
 - `accompagnements.html` — Accompagnements
+- 
 - `contact.html` — Contact
 
 ## Mise en ligne (GitHub Pages)
