@@ -45,6 +45,13 @@ a{color:inherit}
   border:1px solid var(--line);color:var(--ink);transition:.25s;flex:0 0 auto}
 .lin:hover{background:var(--ink);color:var(--sand);transform:translateY(-1px)}
 .lin svg{width:17px;height:17px}
+.nav-left{display:flex;align-items:center;gap:1rem}
+.langsw{display:inline-flex;align-items:center;gap:.4rem}
+.langsw a{display:inline-flex;border-radius:3px;overflow:hidden;border:1px solid var(--line);opacity:.5;transition:opacity .25s,box-shadow .25s;line-height:0}
+.langsw a:hover{opacity:.85}
+.langsw a[aria-current="true"]{opacity:1;box-shadow:0 0 0 2px var(--yellow)}
+.flag{width:22px;height:15px;display:block}
+.flag svg{width:100%;height:100%;display:block}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:.7rem;background:var(--ink);color:var(--sand);text-decoration:none;
@@ -259,7 +266,13 @@ footer .copy{font-size:.8rem;color:var(--ink-2);width:100%;border-top:1px solid 
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
 <header class="site-nav"><div class="wrap">
-  <a class="brand" href="index.html" aria-label="Selformance — accueil"></a>
+  <div class="nav-left">
+    <div class="langsw" role="group" aria-label="Choix de la langue">
+      <a href="index.html" aria-current="true" title="Français"><span class="flag"><svg viewBox="0 0 3 2" preserveAspectRatio="none" aria-hidden="true"><rect width="1" height="2" fill="#0055A4"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#EF4135"/></svg></span></a>
+      <a href="en/index.html" title="English"><span class="flag"><svg viewBox="0 0 30 20" preserveAspectRatio="none" aria-hidden="true"><rect width="30" height="20" fill="#012169"/><path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="4"/><path d="M0 0 30 20M30 0 0 20" stroke="#C8102E" stroke-width="1.5"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3"/></svg></span></a>
+    </div>
+    <a class="brand" href="index.html" aria-label="Selformance — accueil"></a>
+  </div>
   <nav class="navlinks" aria-label="Navigation principale">
     <a class="navlink" href="index.html" aria-current="page">Accueil</a><a class="navlink" href="a-propos.html">À propos</a><a class="navlink" href="accompagnements.html">Accompagnements</a><a class="navlink" href="contact.html">Contact</a>
     <a class="lin" href="https://www.linkedin.com/in/nicolasdallery/" target="_blank" rel="noopener" aria-label="LinkedIn de Nicolas Dalléry"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
