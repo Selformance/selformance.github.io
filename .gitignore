@@ -1,0 +1,21 @@
+# Fichiers personnels / sources — ne pas publier sur GitHub.
+# Le site est 100 % autonome : toutes les images sont intégrées
+# directement dans les fichiers HTML, aucun média externe n'est requis.
+*.HEIC
+*.heic
+*.MOV
+*.mov
+*.zip
+*.docx
+*.png
+*.jpg
+*.JPG
+*.jpeg
+desktop.ini
+
+# Configuration locale Claude Code
+.claude/
+
+# Instructions locales pour Claude Code (non publiees)
+CLAUDE.md
+
