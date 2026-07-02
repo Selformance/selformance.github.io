@@ -77,6 +77,9 @@ a{color:inherit}
 .hero h1 em{color:var(--teal)}
 .lede{font-size:clamp(1.05rem,.5vw + 1rem,1.3rem);color:var(--ink-2);max-width:46ch}
 .lede strong{color:var(--ink);font-weight:600}
+.audience{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.tag{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem 1.05rem;border-radius:999px;background:var(--bg-2);border:1px solid var(--line);font-size:.86rem;font-weight:500;color:var(--ink)}
+.tag svg{width:16px;height:16px;color:var(--teal);flex:0 0 auto}
 .hero-horizon{margin-top:clamp(2.5rem,7vh,4.5rem)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
 .hero-copy{max-width:34ch}
@@ -271,6 +274,11 @@ footer .copy{font-size:.8rem;color:var(--ink-2);width:100%;border-top:1px solid 
         <span class="eyebrow reveal">Coach · présence · alignement</span>
         <h1 class="reveal" style="transition-delay:.08s">Apporter à chacun de la performance par nos <em>consciences</em>.</h1>
         <p class="lede reveal" style="transition-delay:.16s">Bonjour, je suis <strong>Nicolas Dall&eacute;ry</strong>. Coach certifi&eacute;, je vous accompagne avec une pr&eacute;sence totale — vers un alignement entre ce que vous pensez, ressentez et faites.</p>
+        <div class="audience reveal" style="transition-delay:.2s">
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-4 3.1-6.6 7-6.6s7 2.6 7 6.6"/></svg>Individuel</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="8" r="2.7"/><circle cx="16" cy="9" r="2.3"/><path d="M3.2 19c.3-3.3 2.6-5.5 5.6-5.5 1.6 0 3 .6 4 1.6"/><path d="M12.6 19.2c.4-2.6 2.1-4.3 4.3-4.3 2.5 0 4.4 2 4.7 4.9"/></svg>&Eacute;quipes</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="10" height="17" rx="1"/><path d="M15 20.5h4V9l-4-2"/><path d="M8.3 7.5h.01M11.7 7.5h.01M8.3 11h.01M11.7 11h.01M8.3 14.5h.01M11.7 14.5h.01"/></svg>Organisations</span>
+        </div>
         <div class="actions reveal" style="transition-delay:.24s">
           <a class="btn" href="contact.html">&Eacute;crivez-moi <span class="arrow" aria-hidden="true">→</span></a>
           <a class="btn-ghost" href="a-propos.html">Faire connaissance</a>
